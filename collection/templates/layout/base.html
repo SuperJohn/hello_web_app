@@ -1,0 +1,18 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            {% block title %}
+                See how cool I am!??!
+            {%  endblock %}
+        </title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+        {% block header %} {% endblock %}
+    </head>
+    <body>
+        {% block content %} {%  endblock %}
+        {% block footer %} {% endblock %}
+    </body>
+</html>
